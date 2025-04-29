@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon TCG Energy Selector</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon TCG Energy Selector</h1>
+        
+        <div class="player-toggle-container">
+            <div class="player-label">Current Player:</div>
+            <div class="player-toggle">
+                <input type="checkbox" id="player-switch" class="player-switch">
+                <label for="player-switch" class="player-switch-label">
+                    <span class="player-one">Player 1</span>
+                    <span class="player-two">Player 2</span>
+                    <span class="switch-handle"></span>
+                </label>
+            </div>
+        </div>
+        
+        <div class="energy-inputs">
+            <div class="input-group">
+                <label for="grass">
+                    <div class="energy-icon grass"></div>
+                    Grass Energy Cost:
+                </label>
+                <input type="number" id="grass" min="0" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="fire">
+                    <div class="energy-icon fire"></div>
+                    Fire Energy Cost:
+                </label>
+                <input type="number" id="fire" min="0" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="water">
+                    <div class="energy-icon water"></div>
+                    Water Energy Cost:
+                </label>
+                <input type="number" id="water" min="0" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="lightning">
+                    <div class="energy-icon lightning"></div>
+                    Lightning Energy Cost:
+                </label>
+                <input type="number" id="lightning" min="0" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="psychic">
+                    <div class="energy-icon psychic"></div>
+                    Psychic Energy Cost:
+                </label>
+                <input type="number" id="psychic" min="0" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="fighting">
+                    <div class="energy-icon fighting"></div>
+                    Fighting Energy Cost:
+                </label>
+                <input type="number" id="fighting" min="0" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="darkness">
+                    <div class="energy-icon darkness"></div>
+                    Darkness Energy Cost:
+                </label>
+                <input type="number" id="darkness" min="0" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="metal">
+                    <div class="energy-icon metal"></div>
+                    Metal Energy Cost:
+                </label>
+                <input type="number" id="metal" min="0" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="fairy">
+                    <div class="energy-icon fairy"></div>
+                    Fairy Energy Cost:
+                </label>
+                <input type="number" id="fairy" min="0" value="0">
+            </div>
+        </div>
+        
+        <button id="generate-btn">Draw Energy Card</button>
+        
+        <div class="result">
+            <h2>Selected Energy:</h2>
+            <div class="spinner"></div>
+            <div id="result-energy" class="result-energy"></div>
+        </div>
+        
+        <div class="ratio-display">
+            <h3>Energy Ratios:</h3>
+            <div id="ratio-container" class="ratio-container"></div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
